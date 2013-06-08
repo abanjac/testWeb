@@ -3,11 +3,18 @@
 
 <body>
 
-<form action="paste">
-    <textarea></textarea>
+<form action="paste.html" method="post">
+    {% csrf_token %}
+    <textarea name="text"></textarea>
+    <input type="submit" />
 </form>
-
-{{ text }}
+<ul>
+    {% for p in pasties %}
+    <li>    
+    <a href="pastie/{{p.id}}/" >{{p.id}}</a>S
+    </li> 
+    {% endfor %}
+</ul>
 
 </body>
 </html>

@@ -57,6 +57,7 @@
   <ItemGroup>
     <Content Include="index.html" />
     <Content Include="testApp\templates\testApp\index.html" />
+    <Content Include="testApp\templates\testApp\paste.html" />
     <Content Include="testApp\templates\testApp\pastie.html" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.Django.targets" />
